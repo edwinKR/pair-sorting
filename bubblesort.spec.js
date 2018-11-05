@@ -11,4 +11,8 @@ describe('Bubble Sort', function() {
     window.swap();
     expect(window.swap.calls.count()).toEqual(1);
   });
+
+  it('handles alfjadljfan empty array', function() {
+    expect(bubbleSort([3, 2, 5, 1, 4])).toEqual([1, 2, 3, 4, 5]);
+  });
 });
